@@ -1,18 +1,12 @@
-# Cloudflare Pages 配置文件
-# 用于配置构建和函数设置
-name = "subweb"
-pages_build_output_dir = "./dist"
+name = "你的项目名称"
+pages_build_output_dir = "dist"
+compatibility_date = "2024-04-01"
 
-[build]
-  command = "npm run build"
-  publish = "dist"
+[vars]
+# 原来 [functions.env] 或 [build.environment] 里的变量移到这里
+# NODE_VERSION 通常在 Cloudflare 控制台的环境变量里设置，或者在 .node-version 文件里定义
+# NODE_VERSION = "18"
+# MY_SECRET = "your-secret-value"
 
-[build.environment]
-  NODE_VERSION = "18"
-
-[[functions]]
-  pattern = "/api/*"
-
-[functions.env]
-  # 在这里配置环境变量
-  # MY_SECRET = "your-secret-value"
+# 注意：Pages 不需要 [build] 块来指定 command，
+# 构建命令应该在 Cloudflare Pages 的 Dashboard 后台设置。
