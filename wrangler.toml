@@ -1,5 +1,7 @@
 # Cloudflare Pages 配置文件
 # 用于配置构建和函数设置
+name = "subweb"
+pages_build_output_dir = "./dist"
 
 [build]
   command = "npm run build"
