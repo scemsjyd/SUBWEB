@@ -10,3 +10,5 @@ compatibility_date = "2024-04-01"
 
 # 注意：Pages 不需要 [build] 块来指定 command，
 # 构建命令应该在 Cloudflare Pages 的 Dashboard 后台设置。
+[assets]
+directory = "./dist"
