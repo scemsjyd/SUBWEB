@@ -78,22 +78,6 @@ export const backendConfig = [
     value: "https://subconverter.jinadam.de/sub?",
   },
   {
-    label: "CM提供-负载均衡后端",
-    value: "https://subapi.cmliussss.net/sub?",
-  },
-  {
-    label: "CM提供-应急备用后端",
-    value: "https://subapi.fxxk.dedyn.io/sub?",
-  },
-  {
-    label: "肥羊提供-增强型后端",
-    value: "https://url.v1.mk/sub?",
-  },
-  {
-    label: "肥羊提供-备用后端",
-    value: "https://api.v1.mk/sub?",
-  },
-  {
     label: "自建服务",
     value: "http://localhost:25500/sub?",
   },
